@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NYT Search</title>
+	<link rel="stylesheet" type="text/css" href="nyt.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+		  <h1 class="glyphicon glyphicon-eye-open">New York Times Search</h1>
+		</div>
+
+		<div> 
+			<div class="panel panel-default">
+	  			<div class="panel-heading">
+	   				 <h3 class="panel-title glyphicon glyphicon-list-alt">Search Parameters</h3>
+	  			</div>
+	  			<br>
+	  			<br>
+	  			<form>
+	  				Search Term: <input type="text" name="search"><br><br>
+	  				Numbers of Records to Retrieve: <input type="text" name="records"><br><br>
+	  				Start Year (Optional): <input type="text" name="staryr"><br><br>
+	  				End Year (Optional): <input type="text" name="endyr"><br><br>
+	  			</form>
+	  			<button type="button" class="glyphicon glyphicon-zoom-in" id="searchClick">Search</button>
+	  			<button type="button" class="glyphicon glyphicon-remove" id="clearClick">Clear Results</button>
+			</div>
+			<div>
+				<div class="panel panel-default">
+		  			<div class="panel-heading">
+		   				<h3 class="panel-title glyphicon glyphicon-th-list">Top Articles</h3>
+		   			</div>
+		   			<div class="panel-body"></div>
+				</div>
+	  		</div>
+		</div>
+		<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#searchClick').click(function(){
+					console.log('I have been clicked!');
+				})
+				$('#clearClick').click(function(){
+					console.log('I have also been clicked!');
+				})
+			})
+
+
+		</script>
+
+
+
+</body>
+</html>
