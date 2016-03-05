@@ -70,11 +70,11 @@
 
 		        $.ajax({url: queryURL, method: 'GET'})
 		            .done(function(response) {
-		                var headline = reponse.headline.main
+		                var headline = response.headline.main
 		                var author = response.byline.original;
-		                var section = respone.section_name;
+		                var section = response.section_name;
 		                var timeStamp = response.pub_date;
-                    	var hyperlink = response.web_url; 
+                    		var hyperlink = response.web_url;
 
 		                $('#').prepend();
 		            });
